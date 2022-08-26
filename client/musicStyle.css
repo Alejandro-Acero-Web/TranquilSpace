@@ -1,0 +1,50 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8rem;
+    background-color: rgb(32, 51, 24);
+    background-image: radial-gradient(circle at top right, rgba(121, 68, 154, 0.2), transparent), radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.2), transparent)
+  }
+
+canvas {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+
+h1{
+  padding: 2vh;
+  border: 0.5vh solid rgb(255, 255, 255);
+  font-family:'Orbital';
+  color: white;
+  font-weight: lighter;
+}
+  
+@font-face {
+  font-family: 'Orbital';
+  src: url("./FontSamples/MBF\ ORBITAL\ COLONY.woff") format("woff"), url("./FontSamples/MBF\ ORBITAL\ COLONY.ttf") format("truetype");
+}
+ 
+
+
+.visualizer-container{
+  position: absolute;
+  bottom: 30%;
+  width: 100%;
+  
+  /* z-index: 2; */
+  text-align: center;
+}
+.visualizer-container__bar{
+  display: inline-block;
+  background: white;
+  margin: 0 2px;
+  width: 0.35%;
+  
+  z-index: 2;
+}
+
+

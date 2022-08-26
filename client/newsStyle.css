@@ -1,0 +1,77 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem;
+    background-color: rgb(109, 31, 0);
+    background-image: radial-gradient(circle at top right, rgba(121, 68, 154, 0.2), transparent), radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.2), transparent)
+  }
+
+@font-face {
+    font-family: 'Orbital';
+    src: url("./FontSamples/MBF\ ORBITAL\ COLONY.woff") format("woff"), url("./FontSamples/MBF\ ORBITAL\ COLONY.ttf") format("truetype");
+  }
+canvas {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    /* z-index: -1; */
+  }
+  #GetNews{
+    position: sticky;
+  }
+a {
+  text-decoration: none;
+}
+article{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-family:'Orbital';
+  color: white;
+  width: 324px;
+}
+article > img {
+  width: 100%
+}
+div{
+  display: flex;
+  position: sticky;
+  
+}
+#first{
+  gap:18vw;
+}
+#second{
+  gap:18vw;
+}
+p{
+  height:5vh;
+}
+img{
+  padding: 1vh;
+  border: 0.5vh solid white;
+}
+#welcome{
+  padding: 2vh;
+  border: 0.5vh solid rgb(255, 255, 255);
+  font-family:'Orbital';
+  color: white;
+  font-weight: lighter;
+}
+#GetNews{
+  padding: 1vh;
+  background-color: transparent;
+  border: 0.3vh solid rgb(255, 255, 255);
+  font-size: 1vw;
+  font-family:'Orbital';
+  color: white;
+  font-weight: lighter;
+  cursor: pointer;
+  position:sticky;
+  text-align: left;
+}
