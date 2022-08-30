@@ -219,44 +219,5 @@ function onMouseLeave() {
 
 }
 
-let body = document.querySelector("body")
-let GetNews = document.getElementById("GetNews")
-let div1 = document.getElementById("first")
-let div2 = document.getElementById("second")
-
-let NewsGetter = () =>{
-  axios.get("http://localhost:4000/api/news/").then(res =>{
-    console.log(res.data.Image)
-    const article = document.createElement("a")
-    article.href = res.data.url
-    article.target = "blank"
-    article.innerHTML = `<article><img src="${res.data.Image}" alt="Image goes here"><p>${res.data.Title}</p></article>`
-    div1.appendChild(article)
-  })
-}
-let NewsGetter1 = () =>{
-  axios.get("http://localhost:4000/api/news/").then(res =>{
-    console.log(res.data.Image)
-    const article = document.createElement("a")
-    article.href = res.data.url
-    article.target = "blank"
-    article.innerHTML = `<article><img src="${res.data.Image}" alt="Image goes here"><p>${res.data.Title}</p></article>`
-    div2.appendChild(article)
-  })
-}
-let manynews = ()=>{
-  div1.innerHTML = ""
-  div2.innerHTML = ""
-  for (let i = 0; i < 2; i++) NewsGetter()
-  for (let i = 0; i < 2; i++) NewsGetter1()
-}
-// GetNews.addEventListener('click', manynews)
-
-let GetPets = document.getElementById("GetPets")
-let main = document.querySelector("main")
-let petsgetter = () =>{
-  console.log('ds')
-  main.innerHTML=`<img src="https://place-puppy.com/900x600" alt="Image goes here">`
-  }
-
-GetPets.addEventListener('click', petsgetter)
+document.querySelector(".social").target = "blank"
+document.querySelector("#linked").target = "blank"

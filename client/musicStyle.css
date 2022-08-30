@@ -4,7 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8rem;
+    gap: 3rem;
     background-color: rgb(32, 51, 24);
     background-image: radial-gradient(circle at top right, rgba(121, 68, 154, 0.2), transparent), radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.2), transparent)
   }
@@ -16,11 +16,11 @@ canvas {
   }
 
 h1{
-  padding: 2vh;
-  border: 0.5vh solid rgb(255, 255, 255);
+  
   font-family:'Orbital';
   color: white;
   font-weight: lighter;
+  font-size: 6vh;
 }
   
 @font-face {
@@ -32,7 +32,7 @@ h1{
 
 .visualizer-container{
   position: absolute;
-  bottom: 30%;
+  bottom: 25%;
   width: 100%;
   
   /* z-index: 2; */
@@ -48,3 +48,15 @@ h1{
 }
 
 
+p{
+
+  font-family:'Orbital';
+  color: white;
+  font-weight: lighter;
+  font-size: 4vh;
+
+}
+
+audio{
+  position: sticky;
+}
