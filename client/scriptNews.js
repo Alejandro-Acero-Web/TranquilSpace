@@ -226,7 +226,7 @@ let div1 = document.getElementById("first")
 let div2 = document.getElementById("second")
 
 let NewsGetter = () =>{
-  axios.get("http://localhost:4000/api/news/").then(res =>{
+  axios.get("/api/news/").then(res =>{
     div1.innerHTML = ''
     div2.innerHTML = ''
     let { data } = res 

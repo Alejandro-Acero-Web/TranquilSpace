@@ -225,7 +225,7 @@ function onMouseLeave() {
 let GetPets = document.getElementById("GetPets")
 let main = document.querySelector("main")
 let petsgetter = () =>{
-axios.post("http://localhost:4000/api/pets/").then(res =>{
+axios.post("/api/pets/").then(res =>{
 
   let randomHeight = res.data.height
   let randomWidth = res.data.width 
