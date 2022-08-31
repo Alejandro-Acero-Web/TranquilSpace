@@ -232,6 +232,10 @@ axios.post("/api/pets/").then(res =>{
   console.log('ds')
   let height = Math.floor((document.documentElement.scrollHeight) * 0.6)
   let width = Math.floor((document.documentElement.scrollWidth)*0.6)
+  if ( (document.documentElement.scrollHeight) <500 || (document.documentElement.scrollWidth) <700 ){
+    
+    height = Math.floor(height*0.8)
+  }
   main.innerHTML=`<img src="https://place-puppy.com/${width+randomWidth}x${height+randomHeight}" alt="Image goes here">`
 })
 }

@@ -243,6 +243,10 @@ document.querySelector("audio").src = songSource
 
 let visualizer = ()=>{
     let maxBarNumber = 120
+    if ( (document.documentElement.scrollHeight) <500 || (document.documentElement.scrollWidth) <700 ){
+      maxBarNumber = 60
+
+    }
     let audio = document.querySelector("audio")
     audio.onplay = function(){audio.volume = 0.3
       let context = new AudioContext

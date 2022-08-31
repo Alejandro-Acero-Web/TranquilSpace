@@ -55,3 +55,24 @@ button{
 header{
   height: 10%;
 }
+
+@media only screen and (max-width:768px){
+
+  h1{
+    font-size: 5vh;
+    text-align: center;
+  }
+
+  img{
+    position: relative;
+    
+    bottom: -26%;
+  }
+
+  button{
+    position: relative;
+    top: 20%;
+  }
+
+
+}

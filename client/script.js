@@ -227,6 +227,6 @@ let body = document.querySelector("body")
 //   console.log('e')
 // }
 
-if( (document.documentElement.scrollHeight) <500 || (document.documentElement.scrollWidth) <700 ) {
-  body.innerHTML = "<p>Sorry! The mobile version of this website is not yet ready. Come back later!</p>"
-}
+// if( (document.documentElement.scrollHeight) <500 || (document.documentElement.scrollWidth) <700 ) {
+//   body.innerHTML = "<p>Sorry! The mobile version of this website is not yet ready. Come back later!</p>"
+// }
