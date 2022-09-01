@@ -3,8 +3,8 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 8rem;
   background-color: rgb(44, 56, 160);
   background-image: radial-gradient(circle at top right, rgba(0, 0, 0, 1), transparent), radial-gradient(circle at 20% 80%, rgba(0, 0, 0, 1), transparent);
   
@@ -42,9 +42,9 @@ canvas {
 }
 .navbar{
   display:flex;
-  gap:4rem;
   height: 30vh;
   cursor: pointer;
+  gap: 3rem;
 }
 .link{
   display: flex;
@@ -114,13 +114,14 @@ footer{
 
 }
 .navbar{
-  display: block;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
 .link{
   width: 50vw;
-  margin-bottom: 2rem;
-  margin-top: 0.75rem;
   font-size: 4.5vw;
   height: 13vh;
 }
@@ -142,4 +143,12 @@ body{
   top: 1vw;
   width: 95%;
 }
+}
+
+
+@media only screen and (max-height:550px){
+ .navbar{
+  gap:1rem
+ }
+
 }
