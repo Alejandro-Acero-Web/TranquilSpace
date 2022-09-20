@@ -1,1 +1,1 @@
-I am an empty git repository
+Welcome to tranquil space
