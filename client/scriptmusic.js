@@ -1,15 +1,30 @@
 let Songs = [{
-  "Name": "Kujaku",
-  "Source": "./Songs/Kujaku.mp3"
+  "Name": "chilling",
+  "Source": "./Songs/chilling.mp3"
 },
 {
-  "Name": "Warrior",
-  "Source": "./Songs/1samurai.mp3"
+  "Name": "documentary",
+  "Source": "./Songs/documentary.mp3"
+},
+{
+  "Name": "lifestyle",
+  "Source": "./Songs/lifestyle.mp3"
 
-}]
+},
+{
+  "Name": "nature",
+  "Source": "./Songs/nature.mp3"
+
+},
+{
+  "Name": "wind",
+  "Source": "./Songs/wind.mp3"
+
+},
+]
 
 
-let randomIndex = (Math.floor(Math.random() * 2))
+let randomIndex = (Math.floor(Math.random() * 5))
 let songSource = Songs[randomIndex].Source
 let songName = Songs[randomIndex].Name
 let nowPlaying = document.querySelector("p")
