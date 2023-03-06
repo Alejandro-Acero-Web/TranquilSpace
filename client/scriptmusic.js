@@ -16,15 +16,15 @@ let Songs = [{
   "Source": "./Songs/nature.mp3"
 
 },
-{
-  "Name": "wind",
-  "Source": "./Songs/wind.mp3"
+// {
+//   "Name": "wind",
+//   "Source": "./Songs/wind.mp3"
 
-},
+// },
 ]
 
 
-let randomIndex = (Math.floor(Math.random() * 5))
+let randomIndex = (Math.floor(Math.random() * 4))
 let songSource = Songs[randomIndex].Source
 let songName = Songs[randomIndex].Name
 let nowPlaying = document.querySelector("p")
