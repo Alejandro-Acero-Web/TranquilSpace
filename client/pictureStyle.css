@@ -23,6 +23,7 @@ body {
   
   #GetPets{
     margin-right: 4rem;
+    text-align: center;
   }
 
   #back{
