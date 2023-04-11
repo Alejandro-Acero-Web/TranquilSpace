@@ -15,7 +15,7 @@ let NewsGetter = () =>{
       article.target = "blank"
       article.innerHTML = `<article><img src="${Image}" alt="Image goes here"><p>${Title}</p></article>`
 
-      if ( (document.documentElement.scrollHeight) <500 || (document.documentElement.scrollWidth) <820 ){
+      if ( (document.documentElement.scrollHeight) <500 || (document.documentElement.scrollWidth) <821 ){
         if(index % 2 === 0){
           div1.appendChild(article)
         }

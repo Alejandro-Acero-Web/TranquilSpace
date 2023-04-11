@@ -22,7 +22,11 @@ body {
   }
   
   #GetPets{
-    position: sticky;
+    margin-right: 4rem;
+  }
+
+  #back{
+    margin-left: 4rem;
   }
 
   img{
@@ -45,16 +49,29 @@ button{
   padding: 1vh;
   background-color: transparent;
   border: 0.3vh solid rgb(255, 255, 255);
-  
+  position: sticky;
   font-family:'Orbital';
   color: white;
   font-weight: lighter;
   cursor: pointer;
+  width: 110px;
+  
 }
+
+
 
 header{
   height: 10%;
 }
+
+#container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 
 @media only screen and (max-width:840px){
 
@@ -73,6 +90,15 @@ header{
     position: relative;
     top: 20%;
   }
+
+  #GetPets{
+    margin-right: 2.5rem;
+  }
+
+  #back{
+    margin-left: 2.5rem;
+  }
+  
 
 
 }

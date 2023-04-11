@@ -5,9 +5,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    gap: 1.4rem;
+    gap: 2rem;
     background-color: rgb(109, 31, 0);
-    background-image: radial-gradient(circle at top right, rgba(121, 68, 154, 0.2), transparent), radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.2), transparent)
+    
   }
 
 @font-face {
@@ -20,8 +20,12 @@ canvas {
     height: 100%;
     /* z-index: -1; */
   }
-  #GetNews{
-    position: sticky;
+  #container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 a {
   text-decoration: none;
@@ -66,7 +70,8 @@ img{
   font-weight: lighter;
   font-size: 3vw;
 }
-#GetNews{
+
+.btn{
   padding: 1vh;
   background-color: transparent;
   border: 0.3vh solid rgb(255, 255, 255);
@@ -77,6 +82,9 @@ img{
   cursor: pointer;
   position:sticky;
   text-align: left;
+}
+#back{
+  margin-top: 1rem;
 }
 
 a{
@@ -103,9 +111,9 @@ article{
   text-align: center;
   }
 
-  #GetNews{
+  .btn{
     font-size: 2.5vh;
-    top: 20%;
+    
   }
   nav{
     flex-direction: column;
@@ -113,4 +121,11 @@ article{
   a{
     width: 70vw;
   }
+}
+
+
+@media only screen and (max-width:350px){
+#welcome{
+  font-size: 1.5rem;;
+}
 }

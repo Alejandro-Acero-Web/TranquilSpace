@@ -5,7 +5,7 @@ axios.post("/api/pets/").then(res =>{
 
   let randomHeight = res.data.height
   let randomWidth = res.data.width 
-  console.log('ds')
+  
   let height = Math.floor((document.documentElement.scrollHeight) * 0.6)
   let width = Math.floor((document.documentElement.scrollWidth)*0.6)
   if ( (document.documentElement.scrollHeight) <500 || (document.documentElement.scrollWidth) <700 ){

@@ -1,6 +1,6 @@
 const path = require('path')
 
-const { News } = require('../sources/run_results.json')
+const { News } = require('../sources/newsObject.json')
 
 
 
@@ -24,8 +24,8 @@ module.exports = {
     },
     getPicture: (req, res) => {
         let size = {
-            height:Math.floor(Math.random()*(20 - 1) + 1 ),
-            width:Math.floor(Math.random()*(20 - 1) + 1 )
+            height:Math.floor(Math.random()*(40 - 1) + 1 ),
+            width:Math.floor(Math.random()*(40 - 1) + 1 )
 
         }
        res.status(200).send(size)

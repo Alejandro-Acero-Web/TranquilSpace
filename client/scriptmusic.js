@@ -16,14 +16,10 @@ let Songs = [{
   "Source": "./Songs/nature.mp3"
 
 },
-// {
-//   "Name": "wind",
-//   "Source": "./Songs/wind.mp3"
 
-// },
 ]
 
-
+let shuffleBtn = document.getElementById("Shuffle")
 let randomIndex = (Math.floor(Math.random() * 4))
 let songSource = Songs[randomIndex].Source
 let songName = Songs[randomIndex].Name
@@ -36,7 +32,7 @@ document.querySelector("audio").src = songSource
 
 let visualizer = ()=>{
     let maxBarNumber = 120
-    if ( (document.documentElement.scrollHeight) <500 || (document.documentElement.scrollWidth) <820 ){
+    if ( (document.documentElement.scrollHeight) <500 || (document.documentElement.scrollWidth) <821 ){
       maxBarNumber = 60
 
     }
@@ -79,7 +75,9 @@ let visualizer = ()=>{
     
 }
 // document.querySelector("button").onclick=visualizer
-
+shuffleBtn.onclick = () =>{
+  window.location.reload();
+}
 
 visualizer()
 
